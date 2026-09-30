@@ -1,0 +1,158 @@
+{
+ "captured_at": "2026-09-30T20:39:48.651Z",
+ "note": "Real CMC responses, trimmed to one record.",
+ "quote": {
+  "tags": [
+   {
+    "slug": "collectibles-nfts",
+    "name": "Collectibles & NFTs",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "defi",
+    "name": "DeFi",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "interoperability",
+    "name": "Interoperability",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "dao",
+    "name": "DAO",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "ethereum-ecosystem",
+    "name": "Ethereum Ecosystem",
+    "category": "PLATFORM"
+   },
+   {
+    "slug": "coinbase-ventures-portfolio",
+    "name": "Coinbase Ventures Portfolio",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "governance",
+    "name": "Governance",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "solana-ecosystem",
+    "name": "Solana Ecosystem",
+    "category": "PLATFORM"
+   },
+   {
+    "slug": "arrington-xrp-capital-portfolio",
+    "name": "Arrington XRP Capital Portfolio",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "multicoin-capital-portfolio",
+    "name": "Multicoin Capital Portfolio",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "web3",
+    "name": "Web3",
+    "category": "INDUSTRY"
+   },
+   {
+    "slug": "arbitrum-ecosystem",
+    "name": "Arbitrum Ecosystem",
+    "category": "PLATFORM"
+   },
+   {
+    "slug": "cross-chain",
+    "name": "Cross-Chain",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "optimism-ecosystem",
+    "name": "Optimism Ecosystem",
+    "category": "PLATFORM"
+   },
+   {
+    "slug": "jump-crypto",
+    "name": "Jump Crypto",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "base-ecosystem",
+    "name": "Base Ecosystem",
+    "category": "PLATFORM"
+   },
+   {
+    "slug": "cmc-crypto-yearbook-2024-2025",
+    "name": "CMC Crypto Yearbook 2024-25",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "binance-ecosystem",
+    "name": "Binance Ecosystem",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "binance-listing",
+    "name": "Binance Listing",
+    "category": "CATEGORY"
+   }
+  ],
+  "id": 29587,
+  "name": "Wormhole",
+  "symbol": "W",
+  "slug": "wormhole",
+  "is_active": 1,
+  "infinite_supply": false,
+  "is_fiat": 0,
+  "circulating_supply": 6531344024,
+  "total_supply": 10000000000,
+  "max_supply": 10000000000,
+  "date_added": "2024-03-29T04:25:44.000Z",
+  "num_market_pairs": 415,
+  "cmc_rank": 270,
+  "last_updated": "2026-09-30T20:38:00.000Z",
+  "tvl_ratio": null,
+  "platform": {
+   "id": 1027,
+   "slug": "ethereum",
+   "name": "Ethereum",
+   "symbol": "ETH",
+   "token_address": "0xB0fFa8000886e57F86dd5264b9582b2Ad87b2b91"
+  },
+  "self_reported_circulating_supply": 2577873594,
+  "self_reported_market_cap": 34386779.8106802,
+  "minted_market_cap": 133392032.45,
+  "quote": {
+   "USD": {
+    "price": 0.013339203245153456,
+    "volume_24h": 76596699.33953196,
+    "volume_change_24h": -4.7531,
+    "cex_volume_24h": 76491715.58566359,
+    "dex_volume_24h": 104983.75386838,
+    "percent_change_1h": 1.33624849,
+    "percent_change_24h": -3.30315662,
+    "percent_change_7d": 19.55087248,
+    "percent_change_30d": 46.60730354,
+    "percent_change_60d": 68.25261134,
+    "percent_change_90d": 34.26208295,
+    "market_cap": 87122925.40015443,
+    "market_cap_dominance": 0.003,
+    "fully_diluted_market_cap": 133392032.45,
+    "tvl": null,
+    "last_updated": "2026-09-30T20:37:59.000Z"
+   }
+  }
+ },
+ "info": {
+  "id": 29587,
+  "notice": "",
+  "category": "token",
+  "urls": {
+   "website": [
+    "https://wormhole.com"
+   ]
+  }
+ }
+}

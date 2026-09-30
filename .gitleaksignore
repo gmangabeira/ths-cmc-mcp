@@ -1,2 +1,2 @@
-# False positive: tests/fixtures/trump.json line 67 is the public Solana contract address of the TRUMP token from CMC (token_address). Not a credential.
-tests/fixtures/trump.json:generic-api-key:67
+# False positive: tests/fixtures/w.json line 122 is the public Ethereum contract address of the W (Wormhole) token from CMC (token_address). Not a credential.
+tests/fixtures/w.json:generic-api-key:122

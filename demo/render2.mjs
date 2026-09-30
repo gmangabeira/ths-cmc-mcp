@@ -17,13 +17,13 @@ const txt = (n) => readFileSync(`${here}outputs/${n}.txt`, "utf8");
 
 // ---- real numbers parsed from the recorded CLI outputs ----
 const num = (s, re) => Number(s.match(re)[1].replace(/,/g, ""));
-const solT = txt("sol"), trT = txt("trump");
+const solT = txt("sol"), trT = txt("w");
 const sol = {
   mcap: num(solT, /"quote\.USD\.market_cap": ([\d.]+)/),
   fdv: num(solT, /"quote\.USD\.fully_diluted_market_cap": ([\d.]+)/),
   vol: num(solT, /"quote\.USD\.volume_24h": ([\d.]+)/),
 };
-const trump = {
+const tok = {
   mcap: num(trT, /"quote\.USD\.market_cap": ([\d.]+)/),
   fdv: num(trT, /"quote\.USD\.fully_diluted_market_cap": ([\d.]+)/),
   vol: num(trT, /"quote\.USD\.volume_24h": ([\d.]+)/),
@@ -41,14 +41,13 @@ const session = JSON.parse(readFileSync(`${here}outputs/claude-session.json`, "u
 const VO = {
   s1: "Ask an AI if a token is risky, and it answers from memory. No source. No proof.",
   s2: "I built an MCP server that calls CoinMarketCap live, and shows its work.",
-  s3: "Here it is inside Claude Code. I ask if TRUMP is risky. Claude calls my tools, hits the CoinMarketCap API, and answers from live data.",
-  s4: "The numbers tell the story. TRUMP's fully diluted value is three and a half times its market cap. SOL's is barely above one. And TRUMP trades sixty percent of its market cap in a single day.",
+  s3: "Here it is inside Claude Code. I ask if Wormhole is risky. Claude calls my tools, hits the CoinMarketCap API, and answers from live data.",
+  s4: "The numbers tell the story. Wormhole trades eighty-eight percent of its market cap in a single day. SOL trades about six percent. CoinMarketCap's market cap for Wormhole is more than double what the project reports. And the fully diluted gap stays under the three-times line, so that flag stays quiet.",
   s5: "Every flag shows the rule, the CoinMarketCap field, and the exact values. Nothing is guessed.",
   s6: "Nine plain rules. Nineteen tests. A live smoke test against the real API. All open source.",
-  s7: "I also hit some rough edges. Checksummed addresses get a four hundred error that blames the wrong parameter. One endpoint returns its error code as a string. And market pairs are blocked on my plan. It's all in the README.",
   s8: "Market-data signals only. The full on-chain scan lives at Token Health Scan. The repo is on GitHub.",
 };
-const MIN = { s1: 6.8, s2: 7.0, s3: 14.0, s4: 14.6, s5: 8.4, s6: 8.6, s7: 15.6, s8: 8.8 };
+const MIN = { s1: 6.8, s2: 7.0, s3: 14.0, s4: 19.8, s5: 8.4, s6: 8.6, s8: 8.8 };
 const LEAD = 0.3;
 const dur = (f) => Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f]).toString().trim());
 
@@ -76,7 +75,7 @@ const TOTAL = start;
 const DATA = {
   scenes: scenes.map(({ id, start, dur, chunks }) => ({ id, start, dur, chunks })),
   total: TOTAL,
-  sol, trump, session, flagLines,
+  sol, tok, tokName: "Wormhole", tokSym: "W", session, flagLines,
   shots: { repo: `file://${here}work/shots/repo.png`, ths: `file://${here}work/shots/ths.png` },
 };
 console.log("scenes:", scenes.map((s) => `${s.id} ${s.start.toFixed(1)}+${s.dur.toFixed(1)}`).join(" | "), "total", TOTAL.toFixed(1));

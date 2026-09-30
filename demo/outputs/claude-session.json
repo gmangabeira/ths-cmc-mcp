@@ -1,22 +1,23 @@
 {
  "recorded": "2026-09-30",
  "client": "Claude Code (claude -p, headless) with ths-cmc-mcp over stdio",
- "prompt": "Is TRUMP a risky token right now? Use the ths-cmc tools: get the health brief for TRUMP, compare it with SOL, then tell me in three short sentences which flags matter and why.",
+ "prompt": "Is W (Wormhole) a risky token right now? Use the ths-cmc tools: get the health brief for W, compare it with SOL, then tell me in three short sentences which flags matter and why.",
  "calls": [
   {
    "name": "token_health_brief",
    "input": {
-    "token": "TRUMP"
+    "token": "W",
+    "include_context": true
    }
   },
   {
    "name": "compare_tokens",
    "input": {
-    "token_a": "TRUMP",
+    "token_a": "W",
     "token_b": "SOL"
    }
   }
  ],
- "answer": "TRUMP carries three \"watch\" flags SOL has none of: only 28% of its 1B max supply is circulating (FDV $2.03B vs. market cap $571M, a 3.55x gap that means heavy future dilution), 24h volume is 60% of market cap (unusually hot turnover for a token this size), and CMC's market cap disagrees with the project's own self-reported figure by 29%.",
- "answer_full": "TRUMP carries three \"watch\" flags SOL has none of: only 28% of its 1B max supply is circulating (FDV $2.03B vs. market cap $571M, a 3.55x gap that means heavy future dilution), 24h volume is 60% of market cap (unusually hot turnover for a token this size), and CMC's market cap disagrees with the project's own self-reported figure by 29%. SOL by comparison is rank #7, has no flags, a much tighter FDV/mcap ratio (1.08x), and is up 13% over 30 days versus TRUMP's -17% — a cleaner, more liquid profile. Net: TRUMP isn't flashing anything catastrophic, but the dilution overhang plus reporting mismatch make it a materially riskier hold than SOL right now."
+ "answer": "W (Wormhole) — 2 \"watch\"-level flags, both unique to it; SOL has zero.\n\n1. Heavy volume — $76.6M of 24h volume against an $87.1M market cap (87.9%), meaning the entire float effectively turns over daily; SOL trades at ~6% of its cap, so W's price is being set by short-term flow, not holders.\n\n2. Supply mismatch — the project reports a $34.4M cap vs CMC's $87.1M (60.5% apart), so whichever number you read changes your valuation by ~2.5x, and you can't trust either without reconciling the circulating-supply definition.",
+ "answer_full": "**W (Wormhole) — 2 \"watch\"-level flags, both unique to it; SOL has zero.**\n\n1. **Heavy volume** — $76.6M of 24h volume against an $87.1M market cap (87.9%), meaning the entire float effectively turns over daily; SOL trades at ~6% of its cap, so W's price is being set by short-term flow, not holders.\n2. **Supply mismatch** — the project reports a $34.4M cap vs CMC's $87.1M (60.5% apart), so whichever number you read changes your valuation by ~2.5x, and you can't trust either without reconciling the circulating-supply definition.\n3. **Unflagged but worth pricing in** — only 65% of the 10B max supply is circulating, so ~$46M of FDV is still unissued dilution, arriving into a market where the mood is Greed (F&G 67) and W is already +46.6% over 30 days.\n\nThese are CoinMarketCap market-data signals, not an on-chain THS scan — no contract, holder-concentration, or liquidity-lock checks were done here. Not financial advice."
 }

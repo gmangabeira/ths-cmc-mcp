@@ -7,7 +7,7 @@ const dir = new URL("../tests/fixtures/", import.meta.url).pathname;
 mkdirSync(dir, { recursive: true });
 const c = new CmcClient();
 
-for (const s of ["SOL", "TRUMP"]) {
+for (const s of ["SOL", "W"]) {
   const q = await c.get<any>("/v2/cryptocurrency/quotes/latest", { symbol: s, convert: "USD" });
   const rec = [...q.data[s]].sort((a: any, b: any) => (a.cmc_rank ?? 1e9) - (b.cmc_rank ?? 1e9))[0];
   const i = await c.get<any>("/v2/cryptocurrency/info", { id: String(rec.id) });

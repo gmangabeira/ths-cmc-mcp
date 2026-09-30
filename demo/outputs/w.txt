@@ -1,0 +1,36 @@
+CMC API calls made:
+  GET /v2/cryptocurrency/quotes/latest?symbol=W&convert=USD&skip_invalid=true  ->  HTTP 200, 1 credit, 435 ms
+  GET /v2/cryptocurrency/info?id=29587  ->  HTTP 200, 1 credit, 198 ms
+  GET /v3/fear-and-greed/latest  ->  HTTP 200, 1 credit, 373 ms
+  GET /v1/global-metrics/quotes/latest  ->  HTTP 200, 1 credit, 376 ms
+
+Response excerpt (real fields from the API):
+{
+  "quotes/latest": {
+    "id": 29587,
+    "symbol": "W",
+    "cmc_rank": 269,
+    "num_market_pairs": 415,
+    "quote.USD.market_cap": 87104525.7175374,
+    "quote.USD.fully_diluted_market_cap": 133363861.09,
+    "quote.USD.volume_24h": 76590276.09845093,
+    "quote.USD.percent_change_7d": 19.54495392
+  }
+}
+
+Wormhole (W)  rank 269  listed 2024-03-29
+Price $0.0133   Market cap $87.10M   FDV $133.36M
+Volume 24h $76.59M   DEX volume $104,925.65   Pairs 415
+Change 24h -3.3%   7d 19.5%   30d 46.6%
+
+Flags (2):
+  [WATCH] Unusually heavy trading for its size
+      rule: volume_24h is over 50% of market_cap
+      from: volume_24h=76,590,276.098, market_cap=87,104,525.718, volume_to_mcap_pct=87.9
+  [WATCH] Project-reported market cap differs from CMC's
+      rule: self_reported_market_cap differs from market_cap by more than 25%
+      from: self_reported_market_cap=34,379,517.591, market_cap=87,104,525.718, difference_pct=60.5
+
+Market mood: Fear & Greed 67 (Greed)
+
+Market-data signals from CoinMarketCap. Not the Token Health Scan on-chain scan. Not financial advice.

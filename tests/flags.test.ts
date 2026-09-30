@@ -53,26 +53,27 @@ test("recorded SOL response: no flags (large, liquid token)", () => {
   const { quote, info } = fx("sol");
   assert.deepEqual(computeFlags({ quote, info, now: new Date("2026-09-30") }).flags, []);
 });
-test("recorded TRUMP response: fdv_gap, heavy_volume, supply_mismatch fire", () => {
-  const { quote, info } = fx("trump");
+test("recorded Wormhole (W) response: heavy_volume and supply_mismatch fire, fdv_gap stays quiet", () => {
+  const { quote, info } = fx("w");
   const got = computeFlags({ quote, info, now: new Date("2026-09-30") }).flags.map((f) => f.id);
-  for (const want of ["fdv_gap", "heavy_volume", "supply_mismatch"]) assert.ok(got.includes(want), `missing ${want}`);
+  for (const want of ["heavy_volume", "supply_mismatch"]) assert.ok(got.includes(want), `missing ${want}`);
+  assert.ok(!got.includes("fdv_gap"), "FDV is about 1.5x market cap, under the 3x rule");
 });
 
 // Full pipeline with an injected fetch (no network)
 test("brief pipeline: symbol lookup builds a brief from mocked CMC responses", async () => {
-  const { quote, info } = fx("trump");
+  const { quote, info } = fx("w");
   const fetchImpl = async (url: string) => {
     const body = url.includes("/quotes/latest")
-      ? { status: { error_code: 0, credit_count: 1 }, data: { TRUMP: [quote] } }
+      ? { status: { error_code: 0, credit_count: 1 }, data: { W: [quote] } }
       : { status: { error_code: 0, credit_count: 1 }, data: { [String(quote.id)]: info } };
     return new Response(JSON.stringify(body), { status: 200 });
   };
   const client = new CmcClient({ apiKey: "test-key-not-real", fetchImpl });
-  const b = await tokenHealthBrief(client, "trump");
+  const b = await tokenHealthBrief(client, "w");
   assert.equal(b.found, true);
   if (b.found) {
-    assert.equal(b.token.symbol, "TRUMP");
+    assert.equal(b.token.symbol, "W");
     assert.equal(b.evidence.calls.length, 2);
     assert.match(formatBrief(b), /Not the Token Health Scan on-chain scan/);
   }

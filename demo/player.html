@@ -17,10 +17,10 @@ h1{font-size:112px;font-weight:800;letter-spacing:-2px;line-height:1.05}
 .card{position:absolute;background:var(--panel);border:2px solid var(--line);border-radius:22px;overflow:hidden}
 .bar{position:absolute;bottom:0;border-radius:10px 10px 0 0}
 #cap{position:absolute;left:0;right:0;bottom:46px;display:flex;justify-content:center;opacity:0}
-#cap span{background:rgba(3,12,22,.82);border-radius:14px;padding:14px 30px;font-size:38px;font-weight:600;max-width:1600px;text-align:center;line-height:1.3}
+#cap span{background:rgba(3,12,22,.82);border-radius:14px;padding:12px 28px;font-size:34px;font-weight:600;max-width:1780px;text-align:center;line-height:1.3}
 #prog{position:absolute;left:0;bottom:0;height:8px;background:var(--aqua);width:0}
 #wm{position:absolute;right:40px;top:26px;font-size:24px;letter-spacing:3px;color:#5d7a93;font-weight:700}
-.tline{white-space:pre;font-size:25px;line-height:36px}
+.tline{white-space:pre;font-size:26px;line-height:42px}
 </style></head><body>
 <div id="bg"></div><div id="glow"></div>
 <div id="wm">THS-CMC-MCP &middot; #BUILDWITHCMC</div>
@@ -64,23 +64,23 @@ h1{font-size:112px;font-weight:800;letter-spacing:-2px;line-height:1.05}
       <div id="s3p" style="font-size:31px;line-height:1.4;color:#cfe0ee;min-height:130px"></div>
       <div id="s3t1" class="mono" style="font-size:26px;margin-top:10px;opacity:0"></div>
       <div id="s3t2" class="mono" style="font-size:26px;margin-top:14px;opacity:0"></div>
-      <div id="s3a" style="font-size:32px;line-height:1.45;margin-top:34px;color:#fff;min-height:330px"></div>
+      <div id="s3a" style="font-size:29px;line-height:1.4;margin-top:30px;color:#fff;min-height:400px;white-space:pre-wrap"></div>
     </div>
   </div>
 </div>
 
 <!-- S4 charts -->
 <div class="scene" id="s4">
-  <div style="position:absolute;left:0;right:0;top:60px;text-align:center;font-size:54px;font-weight:800">SOL vs TRUMP, straight from the API</div>
-  <div class="card" id="c1" style="left:80px;top:170px;width:560px;height:760px"><div style="padding:26px 30px;font-size:30px;font-weight:700">FDV &divide; market cap</div><div id="c1area" style="position:absolute;left:0;right:0;top:90px;height:560px"></div><div class="dim" style="position:absolute;bottom:22px;left:30px;right:30px;font-size:23px" id="c1n"></div></div>
-  <div class="card" id="c2" style="left:680px;top:170px;width:560px;height:760px"><div style="padding:26px 30px;font-size:30px;font-weight:700">24h volume &divide; market cap</div><div id="c2area" style="position:absolute;left:0;right:0;top:90px;height:560px"></div><div class="dim" style="position:absolute;bottom:22px;left:30px;right:30px;font-size:23px" id="c2n"></div></div>
-  <div class="card" id="c3" style="left:1280px;top:170px;width:560px;height:760px"><div style="padding:26px 30px;font-size:30px;font-weight:700">TRUMP market cap: CMC vs project</div><div id="c3area" style="position:absolute;left:0;right:0;top:90px;height:560px"></div><div class="dim" style="position:absolute;bottom:22px;left:30px;right:30px;font-size:23px" id="c3n"></div></div>
+  <div style="position:absolute;left:0;right:0;top:60px;text-align:center;font-size:54px;font-weight:800">SOL vs Wormhole, straight from the API</div>
+  <div class="card" id="c1" style="left:80px;top:170px;width:560px;height:760px"><div style="padding:26px 30px;font-size:30px;font-weight:700">24h volume &divide; market cap</div><div id="c1area" style="position:absolute;left:0;right:0;top:90px;height:560px"></div><div class="dim" style="position:absolute;bottom:22px;left:30px;right:30px;font-size:23px" id="c1n"></div></div>
+  <div class="card" id="c2" style="left:680px;top:170px;width:560px;height:760px"><div style="padding:26px 30px;font-size:30px;font-weight:700">W market cap: CMC vs project</div><div id="c2area" style="position:absolute;left:0;right:0;top:90px;height:560px"></div><div class="dim" style="position:absolute;bottom:22px;left:30px;right:30px;font-size:23px" id="c2n"></div></div>
+  <div class="card" id="c3" style="left:1280px;top:170px;width:560px;height:760px"><div style="padding:26px 30px;font-size:30px;font-weight:700">FDV &divide; market cap</div><div id="c3area" style="position:absolute;left:0;right:0;top:90px;height:560px"></div><div class="dim" style="position:absolute;bottom:22px;left:30px;right:30px;font-size:23px" id="c3n"></div></div>
 </div>
 
 <!-- S5 terminal flags -->
 <div class="scene" id="s5">
   <div class="card" style="left:110px;top:60px;width:1700px;height:860px">
-    <div style="height:54px;background:#10304d;display:flex;align-items:center;padding:0 24px;gap:12px"><div style="width:14px;height:14px;border-radius:50%;background:#ff5f57"></div><div style="width:14px;height:14px;border-radius:50%;background:#febc2e"></div><div style="width:14px;height:14px;border-radius:50%;background:#28c840"></div><div style="margin-left:16px;font-size:22px;color:var(--dim)">npm run cli -- brief TRUMP --context</div></div>
+    <div style="height:54px;background:#10304d;display:flex;align-items:center;padding:0 24px;gap:12px"><div style="width:14px;height:14px;border-radius:50%;background:#ff5f57"></div><div style="width:14px;height:14px;border-radius:50%;background:#febc2e"></div><div style="width:14px;height:14px;border-radius:50%;background:#28c840"></div><div style="margin-left:16px;font-size:22px;color:var(--dim)">npm run cli -- brief W --context</div></div>
     <div id="s5t" class="mono tline" style="padding:22px 34px"></div>
   </div>
   <div id="s5tag" style="position:absolute;right:150px;top:110px;font-size:40px;font-weight:800;padding:12px 28px;border-radius:14px;background:var(--gold);color:#111;opacity:0"></div>
@@ -154,13 +154,13 @@ S.s3 = t => {
   const row = (c, done) => '<span class="' + (done ? "green" : "gold") + '">' + (done ? "&#10003;" : "&#9679;") + '</span> <span class="aqua">ths-cmc &rsaquo; ' + c.name + '</span> <span class="dim">' + esc(JSON.stringify(c.input)) + '</span>';
   $("s3t1").style.opacity = t > 4.0 ? 1 : 0; $("s3t1").innerHTML = row(t1, t > 5.0);
   $("s3t2").style.opacity = t > 5.2 ? 1 : 0; $("s3t2").innerHTML = row(t2, t > 6.4);
-  $("s3a").innerHTML = esc(typed(D.session.answer, t, 7.0, 62)) + (t > 7.0 && t < D.scenes[2].dur - 1 ? '<span style="display:inline-block;width:12px;height:30px;background:#fff;vertical-align:-4px"></span>' : "");
+  $("s3a").innerHTML = esc(typed(D.session.answer, t, 7.0, 110)) + (t > 7.0 && t < D.scenes[2].dur - 1 ? '<span style="display:inline-block;width:12px;height:30px;background:#fff;vertical-align:-4px"></span>' : "");
 };
 S.s4 = t => {
-  rise("c1", t, 0.4); rise("c2", t, 7.0); rise("c3", t, 10.8);
-  const so = D.sol, tr = D.trump;
-  const bars = (area, items, max, a, unit, thr) => {
-    const H = 440, W = 560; const p = eo(pg(t, a+0.3, 1.3)); let h = "";
+  rise("c1", t, 2.0); rise("c2", t, 8.2); rise("c3", t, 13.2);
+  const so = D.sol, tk = D.tok;
+  const bars = (area, items, max, a, thr) => {
+    const H = 440; const p = eo(pg(t, a+0.3, 1.3)); let h = "";
     items.forEach((it,i) => { const x = 70 + i*250, bh = it.v/max*H*p;
       h += '<div class="bar" style="left:' + x + 'px;width:170px;height:' + bh + 'px;background:' + it.c + ';bottom:40px"></div>';
       h += '<div style="position:absolute;left:' + (x-30) + 'px;width:230px;text-align:center;bottom:' + (48+bh) + 'px;font-size:40px;font-weight:800;color:' + it.c + '">' + it.l(p) + '</div>';
@@ -168,13 +168,13 @@ S.s4 = t => {
     if (thr) { const y = 40 + thr.v/max*H; h += '<div style="position:absolute;left:30px;right:30px;bottom:' + y + 'px;border-top:3px dashed var(--gold);opacity:' + eo(pg(t,a+1.4,0.5)) + '"></div><div style="position:absolute;left:34px;bottom:' + (y+8) + 'px;font-size:22px;color:var(--gold);opacity:' + eo(pg(t,a+1.4,0.5)) + '">' + thr.t + '</div>'; }
     $(area).innerHTML = h;
   };
-  const r1s = so.fdv/so.mcap, r1t = tr.fdv/tr.mcap, r2s = so.vol/so.mcap*100, r2t = tr.vol/tr.mcap*100;
-  bars("c1area", [{v:r1s,c:"#1FB6FF",n:"SOL",l:p=>(r1s*p).toFixed(2)+"x"},{v:r1t,c:"#FFB800",n:"TRUMP",l:p=>(r1t*p).toFixed(2)+"x"}], 4, 0.4, "", {v:3,t:"flag fires at 3x"});
-  bars("c2area", [{v:r2s,c:"#1FB6FF",n:"SOL",l:p=>(r2s*p).toFixed(1)+"%"},{v:r2t,c:"#FFB800",n:"TRUMP",l:p=>(r2t*p).toFixed(0)+"%"}], 70, 7.0, "", {v:50,t:"heavy volume over 50%"});
-  bars("c3area", [{v:tr.mcap,c:"#1FB6FF",n:"CMC",l:p=>fmtM(tr.mcap*p)},{v:tr.self,c:"#FFB800",n:"Project",l:p=>fmtM(tr.self*p)}], 640e6, 10.8, "", null);
-  $("c1n").textContent = "Fields: fully_diluted_market_cap, market_cap";
-  $("c2n").textContent = "Fields: volume_24h, market_cap";
-  $("c3n").textContent = "Fields: market_cap, self_reported_market_cap. Gap " + ((1 - tr.self/tr.mcap)*100).toFixed(0) + "%, flag over 25%";
+  const vS = so.vol/so.mcap*100, vT = tk.vol/tk.mcap*100, fS = so.fdv/so.mcap, fT = tk.fdv/tk.mcap;
+  bars("c1area", [{v:vS,c:"#1FB6FF",n:"SOL",l:p=>(vS*p).toFixed(1)+"%"},{v:vT,c:"#FFB800",n:"W",l:p=>(vT*p).toFixed(0)+"%"}], 100, 2.0, {v:50,t:"heavy volume over 50%"});
+  bars("c2area", [{v:tk.mcap,c:"#1FB6FF",n:"CMC",l:p=>fmtM(tk.mcap*p)},{v:tk.self,c:"#FFB800",n:"Project",l:p=>fmtM(tk.self*p)}], tk.mcap*1.15, 8.2, null);
+  bars("c3area", [{v:fS,c:"#1FB6FF",n:"SOL",l:p=>(fS*p).toFixed(2)+"x"},{v:fT,c:"#1FB6FF",n:"W",l:p=>(fT*p).toFixed(2)+"x"}], 4, 13.2, {v:3,t:"flag needs 3x: stays quiet"});
+  $("c1n").textContent = "Fields: volume_24h, market_cap";
+  $("c2n").textContent = "Fields: market_cap, self_reported_market_cap. Gap " + ((1 - tk.self/tk.mcap)*100).toFixed(1) + "%, flag over 25%";
+  $("c3n").textContent = "Fields: fully_diluted_market_cap, market_cap";
 };
 S.s5 = t => {
   const L = D.flagLines; let h = ""; const n = Math.floor(cl((t - 0.5) / 0.16, 0, L.length));
@@ -196,7 +196,7 @@ S.s5 = t => {
   tag.textContent = lbl; tag.style.opacity = lbl ? eo(pg(t, phase === 1 ? 2.4 : 4.2, 0.3)) : 0;
 };
 S.s6 = t => {
-  const z = 1 + 0.06 * pg(t, 0, D.scenes[5].dur); $("s6img").style.transform = "scale(" + z + ")";
+  const z = 1 + 0.06 * pg(t, 0, D.scenes.find(x=>x.id==="s6").dur); $("s6img").style.transform = "scale(" + z + ")";
   rise("s6s1", t, 0.6); rise("s6s2", t, 1.6); rise("s6s3", t, 3.2); rise("s6url", t, 4.2);
   $("s6n1").textContent = Math.round(9 * eo(pg(t, 1.0, 0.8)));
   $("s6n2").textContent = Math.round(19 * eo(pg(t, 2.0, 1.2))) + " / 19";
@@ -204,7 +204,7 @@ S.s6 = t => {
 };
 S.s7 = t => { rise("f1", t, 1.8); rise("f2", t, 7.2); rise("f3", t, 10.9); };
 S.s8 = t => {
-  const z = 1 + 0.07 * pg(t, 0, D.scenes[7].dur); $("s8img").style.transform = "scale(" + z + ")";
+  const z = 1 + 0.07 * pg(t, 0, D.scenes.find(x=>x.id==="s8").dur); $("s8img").style.transform = "scale(" + z + ")";
   rise("s8a", t, 0.5); rise("s8b", t, 1.6); rise("s8c", t, 3.4); rise("s8d", t, 4.6);
 };
 

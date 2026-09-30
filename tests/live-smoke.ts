@@ -18,7 +18,7 @@ assert.deepEqual(tools, ["compare_tokens", "market_context", "token_health_brief
 
 const text = (r: any) => r.content.map((c: any) => c.text).join("\n");
 
-for (const token of ["SOL", "TRUMP"]) {
+for (const token of ["SOL", "W"]) {
   const r: any = await client.callTool({ name: "token_health_brief", arguments: { token } });
   assert.ok(!r.isError, text(r));
   assert.match(text(r), /Not the Token Health Scan on-chain scan/);
@@ -36,9 +36,9 @@ const nf: any = await client.callTool({ name: "token_health_brief", arguments: {
 assert.equal(nf.structuredContent.found, false);
 console.log("OK unknown token returns a clean not-found");
 
-const cmp: any = await client.callTool({ name: "compare_tokens", arguments: { token_a: "SOL", token_b: "TRUMP" } });
+const cmp: any = await client.callTool({ name: "compare_tokens", arguments: { token_a: "SOL", token_b: "W" } });
 assert.ok(!cmp.isError);
-console.log("OK compare_tokens: only TRUMP flags =", cmp.structuredContent.only_b.join(", "));
+console.log("OK compare_tokens: only W flags =", cmp.structuredContent.only_b.join(", "));
 
 await client.close();
 console.log("SMOKE PASS");
