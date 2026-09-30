@@ -1,0 +1,11 @@
+node_modules
+.env
+.env.*
+!.env.example
+*.log
+demo/frames
+demo/work
+X_POST.md
+SUBMISSION.md
+demo/frames
+demo/preview.mp4

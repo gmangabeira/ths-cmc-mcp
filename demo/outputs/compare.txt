@@ -1,0 +1,38 @@
+CMC API calls made:
+  GET /v2/cryptocurrency/quotes/latest?symbol=SOL&convert=USD&skip_invalid=true  ->  HTTP 200, 0 credit, 257 ms
+  GET /v2/cryptocurrency/info?id=5426  ->  HTTP 200, 0 credit, 149 ms
+  GET /v2/cryptocurrency/quotes/latest?symbol=TRUMP&convert=USD&skip_invalid=true  ->  HTTP 200, 0 credit, 391 ms
+  GET /v2/cryptocurrency/info?id=35336  ->  HTTP 200, 0 credit, 156 ms
+
+Solana (SOL)  rank 7  listed 2020-04-10
+Price $118.63   Market cap $69.76B   FDV $75.33B
+Volume 24h $4.04B   DEX volume $7.91M   Pairs 1181
+Change 24h -0.4%   7d 3.7%   30d 13.5%
+
+Flags: none fired on the nine market-data rules.
+
+Market-data signals from CoinMarketCap. Not the Token Health Scan on-chain scan. Not financial advice. 
+
+----
+
+OFFICIAL TRUMP (TRUMP)  rank 87  listed 2025-01-18
+Price $2.03   Market cap $571.38M   FDV $2.03B
+Volume 24h $342.58M   DEX volume $2.48M   Pairs 740
+Change 24h -0.9%   7d 3.3%   30d -16.8%
+
+Flags (3):
+  [WATCH] Large gap between market cap and fully diluted value
+      rule: fully_diluted_market_cap is 3x or more of market_cap (10x or more = high)
+      from: fully_diluted_market_cap=2,027,126,355.48, market_cap=571,380,356.769, ratio=3.55
+  [WATCH] Unusually heavy trading for its size
+      rule: volume_24h is over 50% of market_cap
+      from: volume_24h=342,580,940.133, market_cap=571,380,356.769, volume_to_mcap_pct=60
+  [WATCH] Project-reported market cap differs from CMC's
+      rule: self_reported_market_cap differs from market_cap by more than 25%
+      from: self_reported_market_cap=405,425,707.127, market_cap=571,380,356.769, difference_pct=29
+
+Market-data signals from CoinMarketCap. Not the Token Health Scan on-chain scan. Not financial advice. 
+
+Shared flags: none
+Only SOL: none
+Only TRUMP: fdv_gap, heavy_volume, supply_mismatch

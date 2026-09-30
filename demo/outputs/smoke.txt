@@ -1,0 +1,7 @@
+tools: compare_tokens, market_context, token_health_brief
+OK token_health_brief SOL: 0 flag(s), 2 CMC call(s)
+OK token_health_brief TRUMP: 3 flag(s), 2 CMC call(s)
+OK market_context: fear & greed = 68 Greed
+OK unknown token returns a clean not-found
+OK compare_tokens: only TRUMP flags = fdv_gap, heavy_volume, supply_mismatch
+SMOKE PASS

@@ -1,0 +1,26 @@
+CMC API calls made:
+  GET /v2/cryptocurrency/quotes/latest?symbol=SOL&convert=USD&skip_invalid=true  ->  HTTP 200, 1 credit, 255 ms
+  GET /v2/cryptocurrency/info?id=5426  ->  HTTP 200, 1 credit, 149 ms
+
+Response excerpt (real fields from the API):
+{
+  "quotes/latest": {
+    "id": 5426,
+    "symbol": "SOL",
+    "cmc_rank": 7,
+    "num_market_pairs": 1181,
+    "quote.USD.market_cap": 69756153625.55852,
+    "quote.USD.fully_diluted_market_cap": 75330706027.67,
+    "quote.USD.volume_24h": 4036058399.913347,
+    "quote.USD.percent_change_7d": 3.71157844
+  }
+}
+
+Solana (SOL)  rank 7  listed 2020-04-10
+Price $118.63   Market cap $69.76B   FDV $75.33B
+Volume 24h $4.04B   DEX volume $7.91M   Pairs 1181
+Change 24h -0.4%   7d 3.7%   30d 13.5%
+
+Flags: none fired on the nine market-data rules.
+
+Market-data signals from CoinMarketCap. Not the Token Health Scan on-chain scan. Not financial advice.

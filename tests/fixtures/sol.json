@@ -1,0 +1,152 @@
+{
+ "captured_at": "2026-09-30T19:00:15.588Z",
+ "note": "Real CMC responses, trimmed to one record.",
+ "quote": {
+  "tags": [
+   {
+    "slug": "pos",
+    "name": "PoS",
+    "category": "ALGORITHM"
+   },
+   {
+    "slug": "platform",
+    "name": "Platform",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "solana-ecosystem",
+    "name": "Solana Ecosystem",
+    "category": "PLATFORM"
+   },
+   {
+    "slug": "cms-holdings-portfolio",
+    "name": "CMS Holdings Portfolio",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "kenetic-capital-portfolio",
+    "name": "Kenetic Capital Portfolio",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "alameda-research-portfolio",
+    "name": "Alameda Research Portfolio",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "multicoin-capital-portfolio",
+    "name": "Multicoin Capital Portfolio",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "okx-ventures-portfolio",
+    "name": "OKX Ventures Portfolio",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "layer-1",
+    "name": "Layer 1",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "ftx-bankruptcy-estate",
+    "name": "FTX Bankruptcy Estate ",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "alleged-sec-securities",
+    "name": "Alleged SEC Securities",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "cmc-crypto-awards-2024",
+    "name": "CMC Crypto Awards 2024",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "made-in-america",
+    "name": "Made in America",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "us-strategic-crypto-reserve",
+    "name": "US Strategic Crypto Reserve",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "binance-ecosystem",
+    "name": "Binance Ecosystem",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "binance-listing",
+    "name": "Binance Listing",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "sec-cftc-token-taxonomy",
+    "name": "SEC/CFTC Token Taxonomy",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "sec-cftc-digital-commodities",
+    "name": "SEC/CFTC Digital Commodities",
+    "category": "CATEGORY"
+   },
+   {
+    "slug": "coinlist-launchpad",
+    "name": "Coinlist Launchpad",
+    "category": "CATEGORY"
+   }
+  ],
+  "id": 5426,
+  "name": "Solana",
+  "symbol": "SOL",
+  "slug": "solana",
+  "is_active": 1,
+  "infinite_supply": true,
+  "is_fiat": 0,
+  "circulating_supply": 588005589.5201399,
+  "total_supply": 634995966.7291862,
+  "max_supply": null,
+  "date_added": "2020-04-10T00:00:00.000Z",
+  "num_market_pairs": 1181,
+  "cmc_rank": 7,
+  "last_updated": "2026-09-30T18:58:00.000Z",
+  "tvl_ratio": null,
+  "platform": null,
+  "self_reported_circulating_supply": 525236893.3,
+  "self_reported_market_cap": 62298016040.69974,
+  "minted_market_cap": 75316470388.3,
+  "quote": {
+   "USD": {
+    "price": 118.6093681448933,
+    "volume_24h": 4037001258.3635616,
+    "volume_change_24h": 12.3153,
+    "cex_volume_24h": 4029095363.868301,
+    "dex_volume_24h": 7905894.49526128,
+    "percent_change_1h": -0.36156298,
+    "percent_change_24h": -0.4120361,
+    "percent_change_7d": 3.66493963,
+    "percent_change_30d": 13.44555132,
+    "percent_change_60d": 67.22241027,
+    "percent_change_90d": 46.56556322,
+    "market_cap": 69742971438.64929,
+    "market_cap_dominance": 2.4311,
+    "fully_diluted_market_cap": 75316470388.3,
+    "tvl": null,
+    "last_updated": "2026-09-30T18:58:59.000Z"
+   }
+  }
+ },
+ "info": {
+  "id": 5426,
+  "notice": "",
+  "category": "coin",
+  "urls": {
+   "website": [
+    "https://solana.com"
+   ]
+  }
+ }
+}

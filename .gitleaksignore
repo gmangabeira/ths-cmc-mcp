@@ -1,0 +1,2 @@
+# False positive: tests/fixtures/trump.json line 67 is the public Solana contract address of the TRUMP token from CMC (token_address). Not a credential.
+tests/fixtures/trump.json:generic-api-key:67
