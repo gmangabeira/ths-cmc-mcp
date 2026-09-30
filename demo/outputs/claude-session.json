@@ -1,0 +1,22 @@
+{
+ "recorded": "2026-09-30",
+ "client": "Claude Code (claude -p, headless) with ths-cmc-mcp over stdio",
+ "prompt": "Is TRUMP a risky token right now? Use the ths-cmc tools: get the health brief for TRUMP, compare it with SOL, then tell me in three short sentences which flags matter and why.",
+ "calls": [
+  {
+   "name": "token_health_brief",
+   "input": {
+    "token": "TRUMP"
+   }
+  },
+  {
+   "name": "compare_tokens",
+   "input": {
+    "token_a": "TRUMP",
+    "token_b": "SOL"
+   }
+  }
+ ],
+ "answer": "TRUMP carries three \"watch\" flags SOL has none of: only 28% of its 1B max supply is circulating (FDV $2.03B vs. market cap $571M, a 3.55x gap that means heavy future dilution), 24h volume is 60% of market cap (unusually hot turnover for a token this size), and CMC's market cap disagrees with the project's own self-reported figure by 29%.",
+ "answer_full": "TRUMP carries three \"watch\" flags SOL has none of: only 28% of its 1B max supply is circulating (FDV $2.03B vs. market cap $571M, a 3.55x gap that means heavy future dilution), 24h volume is 60% of market cap (unusually hot turnover for a token this size), and CMC's market cap disagrees with the project's own self-reported figure by 29%. SOL by comparison is rank #7, has no flags, a much tighter FDV/mcap ratio (1.08x), and is up 13% over 30 days versus TRUMP's -17% — a cleaner, more liquid profile. Net: TRUMP isn't flashing anything catastrophic, but the dilution overhang plus reporting mismatch make it a materially riskier hold than SOL right now."
+}

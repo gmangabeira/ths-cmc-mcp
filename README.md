@@ -89,6 +89,17 @@ npm run cli -- brief 0xdAC17F958D2ee523a2206206994597C13D831ec7
 npm run cli -- compare SOL TRUMP
 ```
 
+### Proof it works in a real MCP client
+
+I ran it inside Claude Code (headless, `claude -p`) with this server attached over stdio and asked: "Is TRUMP a risky token right now? Use the ths-cmc tools..." Claude found the tools, called `token_health_brief` and `compare_tokens`, and answered from the live CMC data. The recorded session is in [`demo/outputs/claude-session.json`](demo/outputs/claude-session.json). The demo video shows it.
+
+Client support, honestly:
+
+| Client | Works? |
+|---|---|
+| Claude Code, Claude Desktop, Cursor, any local stdio MCP client | Yes |
+| ChatGPT and other clients that only accept **remote** (HTTP) MCP servers | Not yet. This server speaks stdio only. Adding a Streamable HTTP transport is the next step. |
+
 ### Use it in an MCP client (Claude Desktop, Cursor, Claude Code)
 
 ```json
@@ -126,6 +137,10 @@ Fixtures in `tests/fixtures/` are real recorded responses (no key, no headers). 
 4. **`market-pairs/latest` returned 403** (error 1006) on the plan I used, so I could not add per-exchange concentration checks.
 5. **The DEX quotes endpoint returned an empty list** for the one address I tried, so I left it out rather than ship something I could not verify.
 6. **`notice` is free text.** One example: WLD carries a note about analytics coverage on World Chain. It is useful context but not a risk signal, so I show notices as info only.
+
+## Demo video
+
+[`demo/demo.mp4`](demo/demo.mp4) (84 s, voiceover and captions). Every number in it comes from the recorded runs in [`demo/outputs/`](demo/outputs), the real Claude Code session, and live screenshots. The video is built from code: `demo/player.html` (scenes) and `demo/render2.mjs` (renderer). The voiceover is AI-generated text-to-speech.
 
 ## Limits
 
